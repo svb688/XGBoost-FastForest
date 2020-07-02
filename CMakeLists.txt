@@ -37,8 +37,3 @@ include(GNUInstallDirs)
 install(TARGETS fastforest
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
-
-
-# create refactor executable
-add_executable(refactor refactor.cpp)
-target_link_libraries(refactor PUBLIC fastforest)
